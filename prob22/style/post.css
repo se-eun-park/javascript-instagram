@@ -13,8 +13,6 @@
 
     display: flex;
     flex-direction: column;
-
-    
 }
 /* ----------------------------------------------- */
 
@@ -67,52 +65,35 @@
 
 /* ------------------------------------------- */
 
-#sectionImage {
-    width: 100%;
-    height: 100%;
+.sectionImage {
+    width: 500px;
+    height: 500px;
 
-    aspect-ratio: 1;
-
+    margin: 0 auto;
     overflow: hidden;
 
     position: relative;
 }
 
-#sectionImage ul {
+.sectionImage ul {
     width: 100%;
     height: 100%;
 
     padding: 0;
     margin: 0;
+
+    display: flex;
 
     list-style: none;
 }
 
-#sectionImage ul li {
-    width: 100%;
-    height: 100%;
+.sectionImage ul li img {
+    width: 500px;
 
-    position: absolute;
-
-    left: 0;
-    transition-delay: 1s;
-
-    padding: 0;
-    margin: 0;
+    object-fit: cover;
 }
 
-#sectionImage ul li img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: fill;
-}
-
-#sectionImage input[type="radio"] {
-    display: none;
-}
-
-#sectionImageArrow {
+.sectionImageArrow {
     width: 100%;
     height: 100%;
 
@@ -134,7 +115,7 @@
     z-index: 5;
 }
 
-#leftArrow {
+.leftArrow {
     width: 20px;
     height: 20px;
 
@@ -147,7 +128,7 @@
     cursor: pointer;
 }
 
-#rightArrow {
+.rightArrow {
     width: 20px;
     height: 20px;
 
@@ -159,7 +140,7 @@
 }
 
 
-#sectionImageBullets {
+.sectionImageBullets {
     position: absolute;
 
     left: 50%;
@@ -170,7 +151,7 @@
     z-index: 10;
 }
 
-#sectionImageBullets label {
+.sectionImageBullets label {
     width: 15px;
     height: 15px;
 
